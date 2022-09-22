@@ -1,0 +1,146 @@
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0%;
+  padding: 0;
+}
+.questionContainer {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 6rem;
+  transition: all 0.2s;
+  padding: 3rem;
+}
+.Questions {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  margin: auto;
+  margin-top: 13rem;
+  padding: 3rem;
+  width: 90vw;
+  max-width: 1170px;
+  margin: 4rem auto;
+}
+
+.Questions span {
+  font-size: 1rem;
+  line-height: 24px;
+  color: rgb(37, 187, 50);
+  align-self: flex-end;
+  letter-spacing: 0.1rem;
+}
+
+.Questions h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: rgb(16, 42, 66);
+}
+
+.Questions .answersContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+.answerBtn {
+  display: block;
+  width: 100%;
+  margin: 0.75rem auto;
+  border-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: all 0.3s linear;
+  background-color: #8ccbf9;
+}
+.answersContainer .answer {
+  margin: 1rem;
+  width: 55%;
+  height: 2.5rem;
+  border: none;
+  margin: auto;
+  border-radius: 3px;
+  background-color: rgb(140, 203, 249);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.answer:hover {
+  background-color: #49a6e9;
+  color: white;
+  transition: all 0.5s;
+}
+
+.Questions .nextQuestionButton {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  width: 23rem;
+  height: 2.5rem;
+  background-color: rgb(255, 177, 0);
+  align-self: flex-end;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+.nextQuestionButton:hover {
+  color: rgb(255, 177, 0);
+  background-color: rgb(135, 100, 18);
+  transition: all 0.6s;
+}
+/* Responsive */
+@media (max-width: 700px) {
+  .questionContainer {
+    margin: 3rem 6rem;
+  }
+  .questionContainer h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  .questionContainer {
+    margin: 6rem 8rem;
+  }
+  .questionContainer .nextQuestionButton {
+    width: 100%;
+  }
+  .questionContainer h2 {
+    font-size: 15px;
+    color: rgb(16, 42, 66);
+    line-height: 2.5rem;
+    margin-top: 1rem;
+  }
+  .nextQuestionButton {
+    width: 60%;
+  }
+  .answerBtn {
+    font-size: small;
+  }
+}
+
+@media (min-width: 250px) {
+  .questionContainer {
+    width: auto;
+    margin: auto;
+    gap: 1rem;
+  }
+  .nextQuestionButton {
+    width: 60%;
+  }
+  h2 {
+    font-size: small;
+  }
+}

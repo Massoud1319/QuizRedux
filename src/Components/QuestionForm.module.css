@@ -1,0 +1,78 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.App {
+  background-color: rgb(255, 255, 255);
+  text-align: initial;
+  width: 30rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+  border-radius: 7px;
+  transition: all 0.2s;
+}
+.App h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  color: rgb(16, 42, 66);
+}
+
+.App label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(50, 77, 103);
+  width: 100%;
+}
+
+.App .labelInput {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.App input,
+.App select {
+  border: none;
+  background-color: rgb(241, 245, 248);
+  height: 1.7rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding-left: 7px;
+}
+
+.App button {
+  margin-top: 1.5rem;
+  height: 2.5rem;
+  border: none;
+  background-color: rgb(255, 177, 0);
+  color: black;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  font-weight: 600;
+  width: 100%;
+}
+/* Responsive */
+@media (max-width: 650px) {
+  .App {
+    width: 20rem;
+    height: 22rem;
+    gap: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: small;
+  }
+  .App {
+    width: 12rem;
+    gap: 1rem;
+  }
+}
